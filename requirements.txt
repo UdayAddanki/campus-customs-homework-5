@@ -1,0 +1,6 @@
+fastapi
+fastmcp
+mcp
+pydantic
+pydantic-ai
+uvicorn

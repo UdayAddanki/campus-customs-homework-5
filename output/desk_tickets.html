@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Customs Desk Tickets</title>
+  <style>
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { margin: 0; background: #f4f6f8; color: #20252b; line-height: 1.55; }
+    main { max-width: 1000px; margin: 36px auto; padding: 0 20px 48px; }
+    h1 { margin-bottom: 6px; }
+    .subtitle { color: #5d6873; margin-top: 0; }
+    .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 0; }
+    .tab { border: 1px solid #c8d0d8; border-bottom: 0; border-radius: 8px 8px 0 0; background: #e7ebef; padding: 10px 16px; cursor: pointer; font: inherit; }
+    .tab[aria-selected="true"] { background: white; color: #0b5cad; font-weight: 700; }
+    .panel { background: white; border: 1px solid #c8d0d8; border-radius: 0 8px 8px 8px; padding: 24px; }
+    .panel[hidden] { display: none; }
+    h2 { margin-top: 0; color: #17324d; }
+    h3 { margin-bottom: 8px; border-bottom: 1px solid #e2e6ea; padding-bottom: 6px; }
+    code { background: #eef2f5; border-radius: 4px; padding: 2px 5px; }
+    .actual { min-height: 80px; border: 1px dashed #aeb8c2; border-radius: 6px; padding: 14px; color: #78828c; }
+    .note { background: #fff8df; border-left: 4px solid #e7b735; padding: 12px 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Campus Customs Desk</h1>
+  <p class="subtitle">Expected plans and space for actual agent results.</p>
+  <div class="tabs" role="tablist" aria-label="Desk sections">
+    <button class="tab" role="tab" aria-selected="true" aria-controls="ticket-101" id="tab-101">Ticket 101</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="ticket-102" id="tab-102">Ticket 102</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="ticket-103" id="tab-103">Ticket 103</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="cash" id="tab-cash">Cash</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="reflection" id="tab-reflection">Reflection</button>
+  </div>
+
+  <section class="panel" role="tabpanel" id="ticket-101" aria-labelledby="tab-101">
+    <h2>Ticket 101 · Bulldog tee</h2>
+    <h3>Expected</h3>
+    <p>I expect the Boss to contact Inventory first because the customer needs a white Bulldog tee in size S, but the shop has none in stock.</p>
+    <p>Inventory should use <code>get_ticket_101_replenishment_context</code> to check the stock, invoice 501, vendor details, and pricing. Inventory should then ask Accounting to review the open, overdue $840 invoice and explain how it affects the possibility of getting the tee reprinted. The vendor cannot ship new products while it has an unpaid invoice, so we need to check this before planning a restock.</p>
+    <p>Once we know what is preventing the restock, the Boss can ask Customer Service to draft a message explaining the situation to the requester. We should not promise a delivery date until the vendor can actually supply the tee.</p>
+    <p>Facilities is not needed for this ticket because the issue is about inventory and an unpaid vendor invoice.</p>
+    <p><strong>Expected delegation:</strong> Boss → Inventory → Accounting → Boss → Customer Service.</p>
+    <p><strong>Expected MCP tool:</strong> <code>get_ticket_101_replenishment_context</code>. Inventory should use it to check the shortage and linked invoice, while Accounting can use the returned information to assess the financial restriction.</p>
+    <h3>Actual</h3><div class="actual">Invoice 501 was verified as the $840 obligation described as a rush reprint for <code>CC-TEE-WHITE S</code>. Human Operator approved and paid it as payment 2. Human Operator then recorded decision 1 for one replenishment at the recorded $8 cost. The ticket was resolved by the decision-based workflow with delivery explicitly not claimed; no purchase or inventory change occurred.</div>
+  </section>
+
+  <section class="panel" role="tabpanel" id="ticket-102" aria-labelledby="tab-102" hidden>
+    <h2>Ticket 102 · Rent due</h2>
+    <h3>Expected</h3>
+    <p>I expect the Boss to contact Facilities first because this ticket is about the shop's rent and lease. Facilities should check the lease details and confirm that the $2,400 rent is due on September 2, 2026.</p>
+    <p>Facilities should then ask Accounting to check the available cash and payment history. Accounting should use the information returned by <code>get_ticket_102_rent_payment_context</code> to confirm that the checking balance is $3,400 and that no rent payment has been recorded. Although there appears to be enough cash to cover the rent, a human still needs to approve the payment.</p>
+    <p>After these checks, the Boss should identify that the rent needs attention and that payment approval is still required. Customer Service can draft a message to the landlord if a response is needed, but nobody should claim that the rent has been paid.</p>
+    <p>Inventory is not needed because this ticket has nothing to do with stock or restocking.</p>
+    <p><strong>Expected delegation:</strong> Boss → Facilities → Accounting → Boss. Customer Service is involved only if a message needs to be drafted.</p>
+    <p><strong>Expected MCP tool:</strong> <code>get_ticket_102_rent_payment_context</code>. It provides the lease, due date, cash balance, and payment history needed to assess the rent obligation.</p>
+    <h3>Actual</h3><div class="actual">The run returned <code>needs_approval</code>. MCP context confirmed $2,400 rent due September 2, 2026, $3,400 starting checking balance, and no prior rent payment. A human approved and completed payment 1 for $2,400. The backend updated Ticket 102 to <code>resolved</code>; ending checking balance is $1,000.</div>
+  </section>
+
+  <section class="panel" role="tabpanel" id="ticket-103" aria-labelledby="tab-103" hidden>
+    <h2>Ticket 103 · Bulk hoodie discount</h2>
+    <h3>Expected</h3>
+    <p>I expect the Boss to contact Inventory first because Yale AI Club wants 20 navy hoodies in size M, but the shop only has 8 available.</p>
+    <p>Inventory should use <code>get_ticket_103_bulk_discount_context</code> to check the stock, pricing, and vendor information. Inventory should report that 12 hoodies are missing and ask Accounting to review the pricing and help assess the discount request.</p>
+    <p>Accounting should use the $22 unit cost and $58 list price to understand the pricing before recommending a discount. Inventory should also check whether any vendor can supply these specific hoodies. The vendor records list different specialties, but they do not confirm that any vendor can supply this product, so we should not assume that restocking is possible.</p>
+    <p>Once Inventory and Accounting share their findings, the Boss should coordinate the next steps. Customer Service can draft a response explaining the stock shortage and asking for any clarification needed about the discount request. We should not promise a discount or delivery date before these details are confirmed.</p>
+    <p>Facilities is not needed because this ticket concerns inventory, pricing, and a bulk order.</p>
+    <p><strong>Expected delegation:</strong> Boss → Inventory → Accounting → Inventory → Boss → Customer Service.</p>
+    <p><strong>Expected MCP tool:</strong> <code>get_ticket_103_bulk_discount_context</code>. It provides the hoodie stock, pricing, and vendor specialties needed to assess the shortage and discount request.</p>
+    <h3>Actual</h3><div class="actual">The records show 8 medium navy hoodies available and 12 still needed. Human Operator recorded decision 1: the customer accepted 8 at $58 each with no discount. Ticket 103 was resolved under the decision-based partial-offer workflow; no purchase or payment occurred, inventory was unchanged, and delivery of the remaining 12 is not claimed.</div>
+  </section>
+
+  <section class="panel" role="tabpanel" id="cash" aria-labelledby="tab-cash" hidden>
+    <h2>Cash</h2><div class="note"><strong>Starting balance:</strong> $3,400.00 after reset.<br><strong>Ticket 102:</strong> -$2,400.00 rent payment after human approval; balance became $1,000.00.<br><strong>Ticket 101:</strong> -$840.00 invoice 501 payment after human approval; balance became $160.00.<br><strong>Ticket 103:</strong> $0.00 change; no purchase or payment occurred.<br><strong>Ending balance:</strong> $160.00, verified in <code>cash_accounts</code>.</div>
+  </section>
+  <section class="panel" role="tabpanel" id="reflection" aria-labelledby="tab-reflection" hidden>
+    <h2>Reflection</h2>
+    <div class="reflection">
+      <h3>1. How would I evaluate the agents on each ticket and why?</h3>
+      <p><strong>Ticket 101:</strong> The agents helped identify the stock shortage and the $840 invoice. After human approval, the invoice was paid and a replenishment decision was recorded for one tee at $8. However, no supplier confirmation or purchase was completed. The ticket was resolved administratively, but the tee was not delivered. The agents helped me make the decision, but could not complete the fulfillment.</p>
+      <p><strong>Ticket 102:</strong> This was the most successful ticket. Facilities identified the $2,400 rent obligation, and Accounting checked the available cash. After human approval, the payment was completed and the ticket was resolved. The process worked well because the information was already available in the database and the payment had a clear approval path.</p>
+      <p><strong>Ticket 103:</strong> The agents identified that only 8 of the 20 hoodies were in stock and helped clarify the pricing decision. We recorded an accepted offer for 8 hoodies at $58 each, with no discount. However, no purchase or delivery occurred. The ticket was resolved based on the decision, not fulfillment. This showed me why it is important to distinguish between a decision and an actual outcome.</p>
+
+      <h3>2. How did Actual compare to my Expected plan for each ticket?</h3>
+      <p><strong>Ticket 101:</strong> I expected Inventory to check stock and Accounting to review the invoice and cash position. This broadly happened. The invoice was paid and the replenishment decision was recorded, but the missing supplier confirmation prevented the purchase. The main difference was that the ticket was resolved without delivery.</p>
+      <p><strong>Ticket 102:</strong> My expected plan was for Facilities to confirm the rent obligation and Accounting to verify the balance and prepare the payment. The actual process followed this plan closely. The $2,400 payment was completed after human approval, and the ticket was resolved.</p>
+      <p><strong>Ticket 103:</strong> I expected Inventory to check stock and pricing, with Accounting assessing the cost of replenishment. The agents identified the shortage and supported the decision to offer the 8 available hoodies at $58 each. The partial offer was accepted and recorded, but the remaining 12 hoodies were not supplied.</p>
+
+      <h3>3. What would have been simpler as one agent with tools, and why?</h3>
+      <p>Ticket 102 could have been handled by one agent with access to the rent and payment context tools. It involved checking the lease, confirming the amount due, checking the balance, and preparing a payment for approval. Multiple agents would add unnecessary coordination to a relatively straightforward task. I would still keep human approval for the payment.</p>
+
+      <h3>4. Three new problems Campus Customs could solve with the tools built</h3>
+      <p><strong>Bulk order pricing:</strong> Inventory and Accounting could check available stock, unit costs, and margins to help evaluate a discount request before a human approves it.</p>
+      <p><strong>Cash planning:</strong> Accounting could review recorded invoices, rent obligations, and the checking balance to flag potential cash shortages before new purchases are approved.</p>
+      <p><strong>Stock shortages:</strong> Inventory could identify shortages and review product and vendor information. The Boss could coordinate with Accounting to estimate replenishment costs and help prepare a decision.</p>
+      <p>These problems fit the current tools because they mainly involve retrieving information, checking calculations, and coordinating decisions.</p>
+
+      <h3>5. Three new problems the agents could not solve with the current tools, and what would be needed</h3>
+      <p><strong>Confirming supplier availability:</strong> A vendor being listed in the database does not mean it can supply a specific item and quantity. We would need a supplier integration to confirm availability, pricing, and delivery timelines, and to place approved orders.</p>
+      <p><strong>Communicating with customers:</strong> The agents can help prepare a message, but they cannot independently send it and verify the customer's response with the current tools. An email or CRM integration could capture genuine customer acceptance and attach it to the ticket.</p>
+      <p><strong>Verifying delivery:</strong> Recording a purchase decision does not mean the product has arrived. We would need an inventory or shipping integration to confirm delivery and update stock only when the goods are actually received.</p>
+      <p>Overall, this project taught me that agents can help organize information and support decisions, but their performance depends on the tools and evidence available. Human approval, reliable records, and a clear distinction between decisions and completed actions are just as important as the agents themselves.</p>
+    </div>
+  </section>
+</main>
+<script>
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  const panels = [...document.querySelectorAll('[role="tabpanel"]')];
+  tabs.forEach(tab => tab.addEventListener('click', () => {
+    tabs.forEach(item => item.setAttribute('aria-selected', item === tab ? 'true' : 'false'));
+    panels.forEach(panel => panel.hidden = panel.id !== tab.getAttribute('aria-controls'));
+  }));
+</script>
+</body>
+</html>

@@ -1,0 +1,1178 @@
+[
+  {
+    "timestamp": "2026-10-11T18:12:30.846431+00:00",
+    "agent": "human",
+    "action": "payment_approved",
+    "tool": "approve_payment",
+    "result": {
+      "payment_id": 1,
+      "amount": 1.0,
+      "new_balance": 3399.0
+    }
+  },
+  {
+    "timestamp": "2026-10-11T18:12:30.850210+00:00",
+    "agent": "system",
+    "action": "working_database_reset"
+  },
+  {
+    "timestamp": "2026-10-11T18:47:37.986420+00:00",
+    "agent": "boss",
+    "action": "run_started",
+    "ticket_id": 101
+  },
+  {
+    "timestamp": "2026-10-11T18:47:38.561697+00:00",
+    "agent": "boss",
+    "action": "run_failed",
+    "ticket_id": 101,
+    "result": "status_code: 400, model_name: gpt-6-luna, body: {'message': \"azure-openai error: Function tools with reasoning_effort are not supported for gpt-6-luna-global in /v1/chat/completions. To use function tools, use /v1/responses or set reasoning_effort to 'none'.\", 'type': 'invalid_request_error', 'param': 'reasoning_effort', 'code': None}"
+  },
+  {
+    "timestamp": "2026-10-11T18:47:38.568438+00:00",
+    "agent": "boss",
+    "action": "run_started",
+    "ticket_id": 102
+  },
+  {
+    "timestamp": "2026-10-11T18:47:38.942417+00:00",
+    "agent": "boss",
+    "action": "run_failed",
+    "ticket_id": 102,
+    "result": "status_code: 400, model_name: gpt-6-luna, body: {'message': \"azure-openai error: Function tools with reasoning_effort are not supported for gpt-6-luna-global in /v1/chat/completions. To use function tools, use /v1/responses or set reasoning_effort to 'none'.\", 'type': 'invalid_request_error', 'param': 'reasoning_effort', 'code': None}"
+  },
+  {
+    "timestamp": "2026-10-11T18:47:38.946272+00:00",
+    "agent": "boss",
+    "action": "run_started",
+    "ticket_id": 103
+  },
+  {
+    "timestamp": "2026-10-11T18:47:39.251115+00:00",
+    "agent": "boss",
+    "action": "run_failed",
+    "ticket_id": 103,
+    "result": "status_code: 400, model_name: gpt-6-luna, body: {'message': \"azure-openai error: Function tools with reasoning_effort are not supported for gpt-6-luna-global in /v1/chat/completions. To use function tools, use /v1/responses or set reasoning_effort to 'none'.\", 'type': 'invalid_request_error', 'param': 'reasoning_effort', 'code': None}"
+  },
+  {
+    "timestamp": "2026-10-11T18:48:39.371328+00:00",
+    "agent": "boss",
+    "action": "run_started",
+    "ticket_id": 101
+  },
+  {
+    "timestamp": "2026-10-11T18:48:39.986361+00:00",
+    "agent": "boss",
+    "action": "run_failed",
+    "ticket_id": 101,
+    "result": "status_code: 400, model_name: gpt-6-luna, body: {'message': \"azure-openai error: Function tools with reasoning_effort are not supported for gpt-6-luna-global in /v1/chat/completions. To use function tools, use /v1/responses or set reasoning_effort to 'none'.\", 'type': 'invalid_request_error', 'param': 'reasoning_effort', 'code': None}"
+  },
+  {
+    "timestamp": "2026-10-11T18:48:39.992733+00:00",
+    "agent": "boss",
+    "action": "run_started",
+    "ticket_id": 102
+  },
+  {
+    "timestamp": "2026-10-11T18:48:40.393568+00:00",
+    "agent": "boss",
+    "action": "run_failed",
+    "ticket_id": 102,
+    "result": "status_code: 400, model_name: gpt-6-luna, body: {'message': \"azure-openai error: Function tools with reasoning_effort are not supported for gpt-6-luna-global in /v1/chat/completions. To use function tools, use /v1/responses or set reasoning_effort to 'none'.\", 'type': 'invalid_request_error', 'param': 'reasoning_effort', 'code': None}"
+  },
+  {
+    "timestamp": "2026-10-11T18:48:40.397425+00:00",
+    "agent": "boss",
+    "action": "run_started",
+    "ticket_id": 103
+  },
+  {
+    "timestamp": "2026-10-11T18:48:40.804717+00:00",
+    "agent": "boss",
+    "action": "run_failed",
+    "ticket_id": 103,
+    "result": "status_code: 400, model_name: gpt-6-luna, body: {'message': \"azure-openai error: Function tools with reasoning_effort are not supported for gpt-6-luna-global in /v1/chat/completions. To use function tools, use /v1/responses or set reasoning_effort to 'none'.\", 'type': 'invalid_request_error', 'param': 'reasoning_effort', 'code': None}"
+  },
+  {
+    "timestamp": "2026-10-11T18:50:53.568980+00:00",
+    "agent": "boss",
+    "action": "run_started",
+    "ticket_id": 101
+  },
+  {
+    "timestamp": "2026-10-11T18:50:54.541539+00:00",
+    "agent": "boss",
+    "action": "run_failed",
+    "ticket_id": 101,
+    "result": "status_code: 400, model_name: gpt-6-luna, body: {'message': \"azure-openai error: Function tools with reasoning_effort are not supported for gpt-6-luna-global in /v1/chat/completions. To use function tools, use /v1/responses or set reasoning_effort to 'none'.\", 'type': 'invalid_request_error', 'param': 'reasoning_effort', 'code': None}"
+  },
+  {
+    "timestamp": "2026-10-11T18:51:49.913909+00:00",
+    "agent": "boss",
+    "action": "run_started",
+    "ticket_id": 101
+  },
+  {
+    "timestamp": "2026-10-11T18:51:51.804807+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T18:51:51.805795+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T18:51:53.308855+00:00",
+    "agent": "boss",
+    "action": "run_failed",
+    "ticket_id": 101,
+    "result": "delegation loop prevented: boss already visited"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:08.450644+00:00",
+    "agent": "boss",
+    "action": "run_started",
+    "ticket_id": 101
+  },
+  {
+    "timestamp": "2026-10-11T19:00:13.927577+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:13.929124+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:13.931863+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:13.932380+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:13.933909+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_customer_service"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:13.934367+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_customer_service"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:16.703487+00:00",
+    "agent": "customer_service",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:16.705014+00:00",
+    "agent": "customer_service",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:16.862243+00:00",
+    "agent": "accounting",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:16.863381+00:00",
+    "agent": "accounting",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:16.911076+00:00",
+    "agent": "inventory",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:16.912228+00:00",
+    "agent": "inventory",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:20.184598+00:00",
+    "agent": "customer_service",
+    "action": "delegation_blocked",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory",
+    "result": "Delegation was safely stopped: delegation depth limit reached. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:00:20.195791+00:00",
+    "agent": "accounting",
+    "action": "delegation_blocked",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory",
+    "result": "Delegation was safely stopped: delegation depth limit reached. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:00:20.219187+00:00",
+    "agent": "inventory",
+    "action": "delegation_blocked",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting",
+    "result": "Delegation was safely stopped: delegation depth limit reached. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:00:21.521817+00:00",
+    "agent": "boss",
+    "action": "delegation_blocked",
+    "ticket_id": 101,
+    "tool": "delegate_to_customer_service",
+    "result": "Delegation was safely stopped: delegation loop prevented: boss already visited. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:00:22.234504+00:00",
+    "agent": "boss",
+    "action": "tool_call_completed",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory",
+    "result": "Ticket 101 requires one CC-TEE-WHITE, size S, but inventory shows **0 available**. The recorded shortage is **1 unit**.\n\nInvoice 501 is recorded as **open** for **$840**, due **August 28, 2026**, to Bulldog Print Co. Its description is \u201cRush reprint CC-TEE-WHITE S.\u201d The vendor record lists apparel reprints as its specialty and a five-day lead time. These records do not confirm that the invoice is still unpaid or that the vendor is currently permitted to ship. I could not obtain Accounting\u2019s conf"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:22.756692+00:00",
+    "agent": "boss",
+    "action": "delegation_blocked",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting",
+    "result": "Delegation was safely stopped: delegation loop prevented: boss already visited. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:00:24.304446+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:24.305321+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:00:27.360668+00:00",
+    "agent": "boss",
+    "action": "delegation_blocked",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting",
+    "result": "Delegation was safely stopped: delegation loop prevented: boss already visited. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:00:29.712149+00:00",
+    "agent": "boss",
+    "action": "run_completed",
+    "ticket_id": 101,
+    "result": "Ticket 101 remains open. **One CC-TEE-WHITE size S is needed, but inventory is zero.** The shop records an open $840 invoice to Bulldog Print Co, due August 28, 2026, described as a rush reprint of this tee; the vendor listing gives a five-day lead time.\n\nThe inventory review cautions that the records do **not** confirm the invoice\u2019s current payment status or whether the vendor is cleared to ship. Accounting\u2019s review could not be obtained, so I can\u2019t verify available cash, vendor restrictions..."
+  },
+  {
+    "timestamp": "2026-10-11T19:07:45.405125+00:00",
+    "agent": "boss",
+    "action": "run_started",
+    "ticket_id": 101
+  },
+  {
+    "timestamp": "2026-10-11T19:07:46.846677+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:46.848158+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:46.850777+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:46.851425+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:46.853341+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_customer_service"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:46.854086+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_customer_service"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:47.462440+00:00",
+    "agent": "customer_service",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:47.464104+00:00",
+    "agent": "customer_service",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:47.494198+00:00",
+    "agent": "accounting",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:47.495409+00:00",
+    "agent": "accounting",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:47.516410+00:00",
+    "agent": "inventory",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:47.517331+00:00",
+    "agent": "inventory",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:47.990055+00:00",
+    "agent": "inventory",
+    "action": "delegation_blocked",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting",
+    "result": "Delegation was safely stopped: delegation loop prevented: inventory already visited. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:07:48.054529+00:00",
+    "agent": "inventory",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:48.055684+00:00",
+    "agent": "inventory",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:48.152201+00:00",
+    "agent": "accounting",
+    "action": "delegation_blocked",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory",
+    "result": "Delegation was safely stopped: delegation loop prevented: accounting already visited. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:07:50.635382+00:00",
+    "agent": "boss",
+    "action": "tool_call_completed",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting",
+    "result": "Ticket 101\u2019s invoice 501 is **open for $840**, due **2026-08-28** (overdue as of the ticket date, 2026-08-31), for a rush reprint of the size S Bulldog tee. Inventory shows **0 in stock**; the vendor\u2019s listed lead time is **5 days**. The listed unit cost is **$8** and list price **$28**, but the available context does not reconcile the invoice total of $840 to the ticket\u2019s request for one tee.\n\nThe only cash balance retrieved is checking at **$3,400 on 2026-08-31**. The $840 invoice is within th"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:50.644631+00:00",
+    "agent": "boss",
+    "action": "tool_call_completed",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory",
+    "result": "Ticket 101 requires **1 CC-TEE-WHITE, size S**. The inventory record shows **0 in stock**, so the shop is short by **1**.\n\nThe linked invoice, **501**, is recorded as **open** for **$840**, due **August 28, 2026**, to **Bulldog Print Co.** The vendor record lists an **apparel reprint** specialty and a **5-day lead time**; the invoice description refers to a rush reprint of this tee. However, the available records do not verify whether the invoice has since been paid or whether the vendor is clea"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:51.142547+00:00",
+    "agent": "inventory",
+    "action": "delegation_blocked",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting",
+    "result": "Delegation was safely stopped: delegation depth limit reached. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:07:53.708921+00:00",
+    "agent": "customer_service",
+    "action": "tool_call_completed",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory",
+    "result": "For ticket 101, **CC-TEE-WHITE, size S, has 0 in stock**, so the requested one tee is currently unavailable. The recorded vendor, Bulldog Print Co, lists apparel reprints as a specialty and a **5-day lead time**. That lead time is not a confirmed replenishment or customer delivery date; the records don\u2019t establish when a new order would ship or arrive.\n\nThere is also **invoice 501**, recorded as open and overdue, for a rush reprint of this same SKU and size. Vendor shipment is restricted while a"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:55.654641+00:00",
+    "agent": "boss",
+    "action": "tool_call_completed",
+    "ticket_id": 101,
+    "tool": "delegate_to_customer_service",
+    "result": "**Draft for review:**\n\nHi Tauhid,\n\nThe size-S Bulldog tee is currently out of stock. We\u2019re checking on replenishment, but the vendor\u2019s five-day lead time is not a confirmed restock or delivery date, so we can\u2019t promise when it will be available.\n\nWould you like us to check for another size or style, or follow up with you once we\u2019ve confirmed the size-S restock timing?\n\nBest,  \nCampus Customs\n\n**Internal note:** Invoice 501 for the size-S reprint is listed as open and overdue. Confirm its payment"
+  },
+  {
+    "timestamp": "2026-10-11T19:07:58.312698+00:00",
+    "agent": "boss",
+    "action": "run_completed",
+    "ticket_id": 101,
+    "result": "**Ticket 101 remains open.** The requested size-S tee is out of stock (0 available). Bulldog Print Co.\u2019s listed lead time is five days, but that does not confirm an order or delivery date.\n\nInvoice 501 is listed as **open for $840**, due August 28, 2026. Accounting flagged that the amount does not reconcile to this one-tee request and said payment requires human approval. **No payment or replenishment order has been made.**\n\n**Next steps:** Have Accounting confirm the invoice amount, current ..."
+  },
+  {
+    "timestamp": "2026-10-11T19:21:37.282163+00:00",
+    "agent": "boss",
+    "action": "run_started",
+    "ticket_id": 101
+  },
+  {
+    "timestamp": "2026-10-11T19:21:39.519034+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:39.520848+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:39.524515+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:39.525225+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:39.527448+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_customer_service"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:39.528133+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_customer_service"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:40.302486+00:00",
+    "agent": "customer_service",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:40.305765+00:00",
+    "agent": "customer_service",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:40.312532+00:00",
+    "agent": "accounting",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:40.313391+00:00",
+    "agent": "accounting",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:40.350936+00:00",
+    "agent": "inventory",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:40.351923+00:00",
+    "agent": "inventory",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:40.849673+00:00",
+    "agent": "inventory",
+    "action": "delegation_blocked",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting",
+    "result": "Delegation was safely stopped: delegation loop prevented: inventory already visited. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:21:40.875642+00:00",
+    "agent": "inventory",
+    "action": "delegated",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:40.876665+00:00",
+    "agent": "inventory",
+    "action": "tool_call_started",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:40.966572+00:00",
+    "agent": "accounting",
+    "action": "delegation_blocked",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory",
+    "result": "Delegation was safely stopped: delegation loop prevented: accounting already visited. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:21:41.064401+00:00",
+    "agent": "boss",
+    "action": "tool_call_completed",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory",
+    "result": "Ticket 101 requires **1 CC-TEE-WHITE, size S**. The inventory record shows **0 in stock**, so the shop is short by **1**.\n\nThe linked invoice, **501**, is recorded as **open** for **$840**, due **August 28, 2026**, to **Bulldog Print Co.** The vendor record lists an **apparel reprint** specialty and a **5-day lead time**; the invoice description refers to a rush reprint of this tee. However, the available records do not verify whether the invoice has since been paid or whether the vendor is clea"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:41.269684+00:00",
+    "agent": "boss",
+    "action": "tool_call_completed",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting",
+    "result": "Ticket 101\u2019s invoice 501 is **open for $840**, due **2026-08-28** (overdue as of the ticket date, 2026-08-31), for a rush reprint of the size S Bulldog tee. Inventory shows **0 in stock**; the vendor\u2019s listed lead time is **5 days**. The listed unit cost is **$8** and list price **$28**, but the available context does not reconcile the invoice total of $840 to the ticket\u2019s request for one tee.\n\nThe only cash balance retrieved is checking at **$3,400 on 2026-08-31**. The $840 invoice is within th"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:41.474202+00:00",
+    "agent": "inventory",
+    "action": "delegation_blocked",
+    "ticket_id": 101,
+    "tool": "delegate_to_accounting",
+    "result": "Delegation was safely stopped: delegation depth limit reached. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:21:41.840337+00:00",
+    "agent": "customer_service",
+    "action": "tool_call_completed",
+    "ticket_id": 101,
+    "tool": "delegate_to_inventory",
+    "result": "For ticket 101, **CC-TEE-WHITE, size S, has 0 in stock**, so the requested one tee is currently unavailable. The recorded vendor, Bulldog Print Co, lists apparel reprints as a specialty and a **5-day lead time**. That lead time is not a confirmed replenishment or customer delivery date; the records don\u2019t establish when a new order would ship or arrive.\n\nThere is also **invoice 501**, recorded as open and overdue, for a rush reprint of this same SKU and size. Vendor shipment is restricted while a"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:42.251806+00:00",
+    "agent": "boss",
+    "action": "tool_call_completed",
+    "ticket_id": 101,
+    "tool": "delegate_to_customer_service",
+    "result": "**Draft for review:**\n\nHi Tauhid,\n\nThe size-S Bulldog tee is currently out of stock. We\u2019re checking on replenishment, but the vendor\u2019s five-day lead time is not a confirmed restock or delivery date, so we can\u2019t promise when it will be available.\n\nWould you like us to check for another size or style, or follow up with you once we\u2019ve confirmed the size-S restock timing?\n\nBest,  \nCampus Customs\n\n**Internal note:** Invoice 501 for the size-S reprint is listed as open and overdue. Confirm its payment"
+  },
+  {
+    "timestamp": "2026-10-11T19:21:42.659757+00:00",
+    "agent": "boss",
+    "action": "run_completed",
+    "ticket_id": 101,
+    "result": {
+      "ticket_id": 101,
+      "status": "needs_approval",
+      "summary": "**Ticket 101 remains open.** The requested size-S tee is out of stock (0 available). Bulldog Print Co.\u2019s listed lead time is five days, but that does not confirm an order or delivery date.\n\nInvoice 501 is listed as **open for $840**, due August 28, 2026. Accounting flagged that the amount does not reconcile to this one-tee request and said payment requires human approval. **No payment or replenishment order has been made.**\n\n**Next steps:** Have Accounting confirm the invoice amount, current payment status, and applicable vendor/payment restrictions. If the invoice and restrictions are cleared, obtain the required human approval before any payment. Confirm the replenishment plan and timing before promising a restock date to Tauhid. Customer Service supplied a draft response offering to check alternatives or follow up once timing is confirmed; verify any alternative stock before offering it.",
+      "evidence": [],
+      "required_action": "Complete the approved business action and verify evidence before resolution.",
+      "human_approval_required": true
+    }
+  },
+  {
+    "timestamp": "2026-10-11T19:22:18.639292+00:00",
+    "agent": "boss",
+    "action": "run_started",
+    "ticket_id": 102
+  },
+  {
+    "timestamp": "2026-10-11T19:22:22.593799+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 102,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:22:22.595419+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 102,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:22:25.905996+00:00",
+    "agent": "boss",
+    "action": "delegation_blocked",
+    "ticket_id": 102,
+    "tool": "delegate_to_accounting",
+    "result": "Delegation was safely stopped: delegation loop prevented: boss already visited. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:22:27.997962+00:00",
+    "agent": "boss",
+    "action": "run_completed",
+    "ticket_id": 102,
+    "result": {
+      "ticket_id": 102,
+      "status": "needs_approval",
+      "summary": "Ticket 102 is **open**. The lease record confirms monthly rent of **$2,400**, due **September 2, 2026**\u2014two days after the ticket was created on August 31. The checking balance is **$3,400** as of August 31, and no rent payments are recorded.\n\nI could not obtain Accounting\u2019s review: delegation was blocked because the boss agent had already visited. So I can\u2019t verify whether unpaid invoices or other obligations affect available cash. **No payment has been made.** Before paying, Accounting should confirm obligations and payment procedure, and the required human approval must be obtained.",
+      "evidence": [],
+      "required_action": "Complete the approved business action and verify evidence before resolution.",
+      "human_approval_required": true
+    }
+  },
+  {
+    "timestamp": "2026-10-11T19:23:51.961283+00:00",
+    "agent": "human",
+    "action": "payment_approved",
+    "ticket_id": 102,
+    "tool": "approve_payment",
+    "result": {
+      "payment_id": 1,
+      "amount": 2400.0,
+      "new_balance": 1000.0,
+      "ticket_resolved": true
+    }
+  },
+  {
+    "timestamp": "2026-10-11T19:24:06.706453+00:00",
+    "agent": "boss",
+    "action": "run_started",
+    "ticket_id": 103
+  },
+  {
+    "timestamp": "2026-10-11T19:24:10.525851+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:10.527523+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:10.531122+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_customer_service"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:10.532123+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_customer_service"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:10.535069+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:10.535962+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:13.496770+00:00",
+    "agent": "customer_service",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:13.498174+00:00",
+    "agent": "customer_service",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:13.500945+00:00",
+    "agent": "accounting",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:13.502184+00:00",
+    "agent": "accounting",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:13.713674+00:00",
+    "agent": "inventory",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:13.715402+00:00",
+    "agent": "inventory",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:16.335105+00:00",
+    "agent": "inventory",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:16.337985+00:00",
+    "agent": "inventory",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:16.747591+00:00",
+    "agent": "accounting",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_boss"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:16.751078+00:00",
+    "agent": "accounting",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_boss"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:17.103183+00:00",
+    "agent": "accounting",
+    "action": "delegation_blocked",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory",
+    "result": "Delegation was safely stopped: delegation loop prevented: accounting already visited. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:24:19.434255+00:00",
+    "agent": "inventory",
+    "action": "delegation_blocked",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting",
+    "result": "Delegation was safely stopped: delegation depth limit reached. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:24:19.478353+00:00",
+    "agent": "boss",
+    "action": "tool_call_completed",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting",
+    "result": "Ticket 103 requests 20 medium navy hoodies. The available figures are **$22 unit cost** and **$58 list price**. At list price, the order would total **$1,160**; the cost basis for 20 units is **$440**, leaving **$720 gross margin ($36 per unit, about 62.1% of sales)** before other expenses.\n\nNo discount is authorized. To evaluate one, we need the shop\u2019s **price-override approval rules and minimum-margin/floor-price policy** (including who can approve an exception). Also, inventory shows only **8"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:19.971752+00:00",
+    "agent": "accounting",
+    "action": "delegation_blocked",
+    "ticket_id": 103,
+    "tool": "delegate_to_boss",
+    "result": "Delegation was safely stopped: delegation depth limit reached. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:24:21.276253+00:00",
+    "agent": "customer_service",
+    "action": "tool_call_completed",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory",
+    "result": "Ticket 103 requires **20** CC-HOOD-NAVY hoodies, size M. Inventory shows **8 available**, so the shop is **short 12**.\n\nBulldog Print Co is recorded as an apparel-reprint vendor with a listed **5-day lead time**, but that alone does not confirm it can supply this specific SKU and size, fulfill a 12-unit reorder, or meet any MOQ or price terms. The available records provide no confirmed MOQ, reorder price, or supply quantity. I also could not verify whether the vendor has an outstanding unpaid in"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:21.538875+00:00",
+    "agent": "inventory",
+    "action": "tool_call_completed",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting",
+    "result": "I can\u2019t verify Bulldog Print Co\u2019s invoice or payment status: the available ticket 103 context provides inventory, pricing, and vendor details, but no invoice/payment records. The boss-agent check was unavailable, so I can\u2019t confirm whether an unpaid invoice would block a shipment. The inventory agent will need an authorized source for vendor invoice status before relying on a new shipment."
+  },
+  {
+    "timestamp": "2026-10-11T19:24:22.913750+00:00",
+    "agent": "customer_service",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:22.917901+00:00",
+    "agent": "customer_service",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:23.426927+00:00",
+    "agent": "boss",
+    "action": "delegation_blocked",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory",
+    "result": "Delegation was safely stopped: delegation loop prevented: boss already visited. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:24:25.738452+00:00",
+    "agent": "accounting",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_boss"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:25.740612+00:00",
+    "agent": "accounting",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_boss"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:27.731314+00:00",
+    "agent": "accounting",
+    "action": "delegation_blocked",
+    "ticket_id": 103,
+    "tool": "delegate_to_boss",
+    "result": "Delegation was safely stopped: delegation depth limit reached. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:24:29.673260+00:00",
+    "agent": "customer_service",
+    "action": "tool_call_completed",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting",
+    "result": "Ticket 103 shows 8 size-M hoodies in stock, at a unit cost of $22 and list price of $58. A 12-unit replenishment from Bulldog Print Co would cost **$264** before any other charges; the vendor\u2019s listed lead time is 5 days.\n\nNo ticket-specific invoice or payment record is linked. Cash balance, outstanding invoices, and current payment status are **unknown from the available records**, so I can\u2019t confirm whether the purchase is financially supportable. A purchase order or payment should not be trea"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:31.398574+00:00",
+    "agent": "boss",
+    "action": "delegation_blocked",
+    "ticket_id": 103,
+    "tool": "delegate_to_customer_service",
+    "result": "Delegation was safely stopped: delegation loop prevented: boss already visited. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:24:32.956620+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:32.959808+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:33.335157+00:00",
+    "agent": "inventory",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:33.338136+00:00",
+    "agent": "inventory",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:33.607133+00:00",
+    "agent": "accounting",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_boss"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:33.609155+00:00",
+    "agent": "accounting",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_boss"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:33.845788+00:00",
+    "agent": "accounting",
+    "action": "delegation_blocked",
+    "ticket_id": 103,
+    "tool": "delegate_to_boss",
+    "result": "Delegation was safely stopped: delegation depth limit reached. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:24:33.984526+00:00",
+    "agent": "inventory",
+    "action": "tool_call_completed",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting",
+    "result": "I can\u2019t verify Bulldog Print Co\u2019s invoice or payment status: the available ticket 103 context provides inventory, pricing, and vendor details, but no invoice/payment records. The boss-agent check was unavailable, so I can\u2019t confirm whether an unpaid invoice would block a shipment. The inventory agent will need an authorized source for vendor invoice status before relying on a new shipment."
+  },
+  {
+    "timestamp": "2026-10-11T19:24:34.104123+00:00",
+    "agent": "boss",
+    "action": "delegation_blocked",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory",
+    "result": "Delegation was safely stopped: delegation loop prevented: boss already visited. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:24:35.411562+00:00",
+    "agent": "boss",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_customer_service"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:35.413378+00:00",
+    "agent": "boss",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_customer_service"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:35.637406+00:00",
+    "agent": "customer_service",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:35.639258+00:00",
+    "agent": "customer_service",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:35.866634+00:00",
+    "agent": "inventory",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:35.868383+00:00",
+    "agent": "inventory",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:36.138248+00:00",
+    "agent": "inventory",
+    "action": "delegation_blocked",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting",
+    "result": "Delegation was safely stopped: delegation depth limit reached. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:24:36.248011+00:00",
+    "agent": "customer_service",
+    "action": "tool_call_completed",
+    "ticket_id": 103,
+    "tool": "delegate_to_inventory",
+    "result": "Ticket 103 requires **20** CC-HOOD-NAVY hoodies, size M. Inventory shows **8 available**, so the shop is **short 12**.\n\nBulldog Print Co is recorded as an apparel-reprint vendor with a listed **5-day lead time**, but that alone does not confirm it can supply this specific SKU and size, fulfill a 12-unit reorder, or meet any MOQ or price terms. The available records provide no confirmed MOQ, reorder price, or supply quantity. I also could not verify whether the vendor has an outstanding unpaid in"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:36.407573+00:00",
+    "agent": "customer_service",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:36.409161+00:00",
+    "agent": "customer_service",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:36.744503+00:00",
+    "agent": "accounting",
+    "action": "delegated",
+    "ticket_id": 103,
+    "tool": "delegate_to_boss"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:36.746347+00:00",
+    "agent": "accounting",
+    "action": "tool_call_started",
+    "ticket_id": 103,
+    "tool": "delegate_to_boss"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:36.860481+00:00",
+    "agent": "accounting",
+    "action": "delegation_blocked",
+    "ticket_id": 103,
+    "tool": "delegate_to_boss",
+    "result": "Delegation was safely stopped: delegation depth limit reached. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:24:36.983497+00:00",
+    "agent": "customer_service",
+    "action": "tool_call_completed",
+    "ticket_id": 103,
+    "tool": "delegate_to_accounting",
+    "result": "Ticket 103 shows 8 size-M hoodies in stock, at a unit cost of $22 and list price of $58. A 12-unit replenishment from Bulldog Print Co would cost **$264** before any other charges; the vendor\u2019s listed lead time is 5 days.\n\nNo ticket-specific invoice or payment record is linked. Cash balance, outstanding invoices, and current payment status are **unknown from the available records**, so I can\u2019t confirm whether the purchase is financially supportable. A purchase order or payment should not be trea"
+  },
+  {
+    "timestamp": "2026-10-11T19:24:37.087029+00:00",
+    "agent": "boss",
+    "action": "delegation_blocked",
+    "ticket_id": 103,
+    "tool": "delegate_to_customer_service",
+    "result": "Delegation was safely stopped: delegation loop prevented: boss already visited. Continue using verified MCP findings and report the missing peer input."
+  },
+  {
+    "timestamp": "2026-10-11T19:24:39.454335+00:00",
+    "agent": "boss",
+    "action": "run_completed",
+    "ticket_id": 103,
+    "result": {
+      "ticket_id": 103,
+      "status": "needs_approval",
+      "summary": "**Ticket 103 remains open.** Yale AI Club requests 20 medium navy hoodies. The shop has **8 in stock**, leaving **12 to source**. Bulldog Print Co specializes in apparel reprints and lists a **5-day lead time**, but replenishment availability and terms have not been confirmed.\n\nAt list price, 20 hoodies total **$1,160**. The listed unit cost is **$22**; that figure alone does not establish an approved discount or minimum acceptable price. Accounting identified that the shop\u2019s price-override approval rules and margin floor are needed before quoting a discount. Every payment requires human approval.\n\nInventory and Customer Service input could not be obtained because delegation was stopped. Before committing, confirm replenishment feasibility and the club\u2019s needed-by date; then obtain the required human approval for any price exception. Do not promise a discount or delivery date yet.",
+      "evidence": [],
+      "required_action": "Complete the approved business action and verify evidence before resolution.",
+      "human_approval_required": true
+    }
+  },
+  {
+    "timestamp": "2026-10-11T21:07:22.892110+00:00",
+    "agent": "human",
+    "action": "payment_approved",
+    "ticket_id": 101,
+    "tool": "approve_payment",
+    "result": {
+      "payment_id": 2,
+      "amount": 840.0,
+      "new_balance": 160.0,
+      "ticket_resolved": false
+    }
+  },
+  {
+    "timestamp": "2026-10-11T21:14:00.649146+00:00",
+    "agent": "human",
+    "action": "replenishment_decision_recorded",
+    "ticket_id": 101,
+    "result": {
+      "decision_id": 1,
+      "approved_qty": 1,
+      "unit_price": 8.0,
+      "delivery_claimed": false
+    }
+  },
+  {
+    "timestamp": "2026-10-11T21:14:00.651592+00:00",
+    "agent": "human",
+    "action": "ticket_resolved_by_replenishment_decision",
+    "ticket_id": 101,
+    "result": {
+      "decision_id": 1,
+      "approved_qty": 1,
+      "unit_price": 8.0,
+      "delivery_claimed": false,
+      "cash_change": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-11T21:16:17.082780+00:00",
+    "agent": "human",
+    "action": "order_decision_recorded",
+    "ticket_id": 103,
+    "result": {
+      "decision_id": 1,
+      "approved_qty": 8,
+      "discount_unit_price": 58.0,
+      "customer_accepts_partial": true
+    }
+  },
+  {
+    "timestamp": "2026-10-11T21:16:17.085282+00:00",
+    "agent": "human",
+    "action": "ticket_resolved_by_partial_decision",
+    "ticket_id": 103,
+    "result": {
+      "decision_id": 1,
+      "approved_qty": 8,
+      "unit_price": 58.0,
+      "delivery_claimed": false,
+      "cash_change": 0
+    }
+  }
+]
